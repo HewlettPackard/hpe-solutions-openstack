@@ -1,0 +1,71 @@
+resource_registry:
+  OS::TripleO::NodeUserData: /home/stack/templates/firstboot/wipe-disks.yaml
+
+parameter_defaults:
+  CephAnsibleDisksConfig:
+    osd_scenario: non-collocated
+    devices:
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x5000c500b884cf95-lun-0
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x5000c500b897276d-lun-0
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x5000c500b8972899-lun-0
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x5000c500b8973361-lun-0
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x5000c500b896a431-lun-0
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x5000c500b8968b35-lun-0
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x5000c500b8972826-lun-0
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x5000c500b89688f1-lun-0
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x50000398e830d0da-lun-0
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x5000c500b8c419ed-lun-0
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x5000c500b8c288aa-lun-0
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x50000398e831d8d7-lun-0
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x5000c500b8c478aa-lun-0
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x5000c500b8c535e6-lun-0
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x5000c500b8c41eb6-lun-0
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x5000c500b8c4e5ae-lun-0
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x5000c500b8c4e6f5-lun-0
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x5000c500b8c50f6a-lun-0
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x5000c500b8c51bea-lun-0
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x5000c500b8c52f5e-lun-0
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x5000c500b8c3c74d-lun-0
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x5000c500b8c50b21-lun-0
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x5000c500b8c52579-lun-0
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x5000c500b8c16a7d-lun-0
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x5000c500b8c5265d-lun-0
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x5000c500b8c4e1d5-lun-0
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x5000c500b8c57df9-lun-0
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x5000c500b8c4f041-lun-0
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x5000c500b8c4ed59-lun-0
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x5000c500b8c56c8d-lun-0
+    dedicated_devices:
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x5001438040608900-lun-0
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x5001438040608900-lun-0
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x5001438040608900-lun-0
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x5001438040608900-lun-0
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x5001438040608900-lun-0
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x5001438040608901-lun-0
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x5001438040608901-lun-0
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x5001438040608901-lun-0
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x5001438040608901-lun-0
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x5001438040608901-lun-0
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x5001438040608902-lun-0
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x5001438040608902-lun-0
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x5001438040608902-lun-0
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x5001438040608902-lun-0
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x5001438040608902-lun-0
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x5001438040608903-lun-0
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x5001438040608903-lun-0
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x5001438040608903-lun-0
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x5001438040608903-lun-0
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x5001438040608903-lun-0
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x5001438040608904-lun-0
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x5001438040608904-lun-0
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x5001438040608904-lun-0
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x5001438040608904-lun-0
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x5001438040608904-lun-0
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x5001438040608905-lun-0
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x5001438040608905-lun-0
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x5001438040608905-lun-0
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x5001438040608905-lun-0
+      - /dev/disk/by-path/pci-0000:5c:00.0-sas-0x5001438040608905-lun-0
+    journal_size: 8192
+  CephConfigOverrides:
+    mon_max_pg_per_osd: 2048

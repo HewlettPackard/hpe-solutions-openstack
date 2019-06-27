@@ -1,0 +1,13 @@
+parameter_defaults:
+  NodeRootPassword: redhat
+  ControllerCount: 3
+  OvercloudControllerFlavor: control
+  ComputeCount: 3
+  OvercloudComputeFlavor: compute
+  CephStorageCount: 3
+  OvercloudCephStorageFlavor: ceph-storage
+
+# Misc Config
+  NtpServer: '15.226.47.253'
+  NeutronNetworkType: 'vxlan'
+  NeutronTunnelTypes: 'vxlan'
