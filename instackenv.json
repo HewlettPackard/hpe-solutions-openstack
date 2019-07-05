@@ -1,0 +1,139 @@
+{
+  "nodes": [
+    {
+      "pm_user": "admin",
+      "arch": "x86_64",
+      "name": "overcloud-compute1",
+      "capabilities": "profile:compute,boot_option:local",
+      "pm_addr": "192.168.1.43",
+      "pm_password": "password",
+      "pm_type": "pxe_ilo",
+      "mac": [
+        "98:F2:B3:22:35:3C"
+      ],
+      "cpu": "1",
+      "memory": "1024",
+      "disk": "10"
+    },
+    {
+      "pm_user": "admin",
+      "arch": "x86_64",
+      "name": "overcloud-compute2",
+      "capabilities": "profile:compute,boot_option:local",
+      "pm_addr": "192.168.1.49",
+      "pm_password": "password",
+      "pm_type": "pxe_ilo",
+      "mac": [
+        "98:F2:B3:22:35:26"
+      ],
+      "cpu": "1",
+      "memory": "1024",
+      "disk": "10"
+    },
+    {
+      "pm_user": "admin",
+      "arch": "x86_64",
+      "name": "overcloud-compute3",
+      "capabilities": "profile:compute,boot_option:local",
+      "pm_addr": "192.168.1.50",
+      "pm_password": "password",
+      "pm_type": "pxe_ilo",
+      "mac": [
+        "98:F2:B3:22:55:5A"
+      ],
+      "cpu": "1",
+      "memory": "1024",
+      "disk": "10"
+    },
+    {
+      "pm_user": "admin",
+      "arch": "x86_64",
+      "name": "overcloud-controller1",
+      "capabilities": "profile:control,boot_option:local",
+      "pm_addr": "192.168.1.46",
+      "pm_password": "password",
+      "pm_type": "pxe_ilo",
+      "mac": [
+        "98:F2:B3:22:45:A4"
+      ],
+      "cpu": "1",
+      "memory": "1024",
+      "disk": "10"
+    },
+    {
+      "pm_user": "admin",
+      "arch": "x86_64",
+      "name": "overcloud-controller2",
+      "capabilities": "profile:control,boot_option:local",
+      "pm_addr": "192.168.1.47",
+      "pm_password": "password",
+      "pm_type": "pxe_ilo",
+      "mac": [
+        "98:F2:B3:22:45:98"
+      ],
+      "cpu": "1",
+      "memory": "1024",
+      "disk": "10"
+    },
+    {
+      "pm_user": "admin",
+      "arch": "x86_64",
+      "name": "overcloud-controller3",
+      "capabilities": "profile:control,boot_option:local",
+      "pm_addr": "192.168.1.42",
+      "pm_password": "password",
+      "pm_type": "pxe_ilo",
+      "mac": [
+        "98:F2:B3:21:1F:BE"
+      ],
+      "cpu": "1",
+      "memory": "1024",
+      "disk": "10"
+    },
+    {
+      "pm_user": "admin",
+      "arch": "x86_64",
+      "name": "overcloud-ceph1",
+      "capabilities": "profile:ceph-storage,boot_option:local",
+      "pm_addr": "192.168.1.44",
+      "pm_password": "password",
+      "pm_type": "pxe_ilo",
+      "mac": [
+        "98:F2:B3:22:35:00"
+      ],
+      "cpu": "1",
+      "memory": "1024",
+      "disk": "10"
+    },
+    {
+      "pm_user": "admin",
+      "arch": "x86_64",
+      "name": "overcloud-ceph2",
+      "capabilities": "profile:ceph-storage,boot_option:local",
+      "pm_addr": "192.168.1.51",
+      "pm_password": "password",
+      "pm_type": "pxe_ilo",
+      "mac": [
+        "98:F2:B3:22:35:58"
+      ],
+      "cpu": "1",
+      "memory": "1024",
+      "disk": "10"
+    },
+    {
+      "pm_user": "admin",
+      "arch": "x86_64",
+      "name": "overcloud-ceph3",
+      "capabilities": "profile:ceph-storage,boot_option:local",
+      "pm_addr": "192.168.1.48",
+      "pm_password": "password",
+      "pm_type": "pxe_ilo",
+      "mac": [
+        "98:F2:B3:22:35:7A"
+      ],
+      "cpu": "1",
+      "memory": "1024",
+      "disk": "10"
+    }
+  ]
+}
